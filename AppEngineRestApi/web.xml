@@ -1,0 +1,13 @@
+<servlet>
+        <servlet-name>RestletServlet</servlet-name>
+        <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+        <init-param>
+            <param-name>org.restlet.application</param-name>
+            <param-value>it.jdev.appengine.MyJaxRsApplication</param-value>
+        </init-param>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>RestletServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
